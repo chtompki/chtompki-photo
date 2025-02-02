@@ -17,6 +17,7 @@ module.exports = {
                 "url": require.resolve("url"),
                 "buffer": require.resolve("buffer"),
                 "process": require.resolve("process/browser"),
+                "zlib": require.resolve("browserify-zlib"),
             };
 
             return webpackConfig;
