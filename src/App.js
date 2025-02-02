@@ -1,4 +1,4 @@
-import { ThirdwebProvider, ConnectWallet } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { Ethereum } from "@thirdweb-dev/chains";
 import NFTGallery from './components/NFTGallery';
 import Header from './components/Header';
