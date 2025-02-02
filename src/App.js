@@ -1,15 +1,16 @@
-import { ThirdwebProvider, ConnectWallet, useContract } from "@thirdweb-dev/react";
+import { ThirdwebProvider, ConnectWallet } from "@thirdweb-dev/react";
+import { Ethereum } from "@thirdweb-dev/chains";
+import NFTGallery from './components/NFTGallery';
+import Header from './components/Header';
+import './styles/App.css';
 
 function App() {
     return (
-        <ThirdwebProvider activeChain="ethereum">
-            <div className="container">
-                <header>
-                    <h1>chtompki.photo NFTs</h1>
-                    <ConnectWallet />
-                </header>
-                <main>
-                    {/* Your NFT gallery will go here */}
+        <ThirdwebProvider activeChain={Ethereum}>
+            <div className="app">
+                <Header />
+                <main className="main-content">
+                    <NFTGallery />
                 </main>
             </div>
         </ThirdwebProvider>
